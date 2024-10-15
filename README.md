@@ -8,7 +8,7 @@ Once you have forked, cloned, and copied this repo locally, you will want to ope
 
 ### Opening a directory
 
-When you open a new instance of VSCode, you should be greeted with a welcome page. Under the **Start** section of this page are three options (New file, Open, Clone Git Repository). Click on the **Open** link, and you can then navigate to the local folder where you copied this repo.
+When you open a new instance of VSCode, you should be greeted with a welcome page. Under the **Start** section of this page are a few options including 'New file', 'Open File', 'Open Folder', and 'Clone Git Repository'. Click on the **Open Folder** link, and you can then navigate to the local folder where you copied this repo.
 
 If you do not see the welcome screen, no worries! In the left-hand menu bar, you should see an icon that looks like two pieces of paper. Clicking on this will also give you the option to **Open Folder** in the same way.
 
@@ -32,16 +32,30 @@ Before you make any changes, this repo should contain two directories (`books` a
 
 ## Useful commands
 
+### Linux/MacOS
+
 ```bash
-cd directoryName
-cd ..
 touch exampleFile.md
 echo "text" > exampleFile.md
 echo "text" >> exampleFile.md
 rm exampleFile.md
 ```
 
+### Windows Powershell
+
 ```bash
+New-Item exampleFile.md
+ni exampleFile2.md
+echo "text" > exampleFile.md
+echo "text" >> exampleFile.md
+rm exampleFile.md
+```
+
+### Any Terminal
+
+```bash
+cd directoryName
+cd ..
 git status
 git add file.md
 git commit -m "Descriptive commit message"
@@ -68,7 +82,9 @@ If you need a refresher, [this video](https://www.youtube.com/watch?v=9p2d-CuVlg
 
 As mentioned earlier, our `books` directory has a pretty strange file inside! Let's go ahead and remove `worstSocks.md`, as we won't be needing it.
 
-After, let's go ahead and create a file of our own. Our `books` directory is looking a little empty now, so let's add a new file (`favouriteBooks.md`) into it using the `touch` command.
+After, let's go ahead and create a file of our own. Our `books` directory is looking a little empty now, so let's add a new file (`favouriteBooks.md`) into it using the `touch` or `New-Item` command.
+
+> Note: Use the command appropriate to the system you are using.
 
 Once you've created that file, go ahead and add your three favourite books into it, much like we did with our films.
 
